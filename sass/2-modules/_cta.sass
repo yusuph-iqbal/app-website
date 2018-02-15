@@ -1,0 +1,39 @@
+.cta
+  background-color: lighten($harmonic, 8.5%)
+  padding: 5em 0
+  background-image: url('../img/george-morgan-417051.jpg')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  background-blend-mode: multiply
+  color: #fafafa
+  position: relative
+
+  @media (min-width: 725px)
+    padding: 10em 0
+
+    &::before, &::after
+      content: ''
+      display: block
+      background: $accent
+      position: absolute
+      width: 100%
+
+    &::before
+      top: 0
+      bottom: 0
+      transform: skewX(45deg)
+      left: -100%
+
+    &::after
+      top: 0
+      bottom: 0
+      transform: skewX(45deg)
+      right: -100%
+
+    .container-cta
+      width: 50%
+
+  .btn-primary
+    background-color: $accent
+    border-color: $accent

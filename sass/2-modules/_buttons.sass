@@ -1,0 +1,28 @@
+.btn
+  display: inline-block
+  padding: .75em 2.5em
+  text:
+    transform: uppercase
+    decoration: none
+  transition: all ease-in-out 250ms
+
+  &:not(:last-of-type)
+    margin-bottom: .6em
+
+.btn-primary
+  background-color: $harmonic
+  color: #fafafa
+  border: 2px solid $harmonic
+
+  &:hover,
+  &:focus
+    background-color: darken($harmonic, 6.5%)
+
+.btn-secondary
+  border: 2px solid #fafafa
+  color: #fafafa
+
+  &:hover,
+  &:focus
+    background-color: #fafafa
+    color: $accent
